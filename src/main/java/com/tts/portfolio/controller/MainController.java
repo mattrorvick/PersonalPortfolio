@@ -22,7 +22,6 @@ public class MainController {
     private List<Comments> posts = new ArrayList<>();
 
 
-
     @GetMapping(value = "/")
     public String greeting() {
 
@@ -63,7 +62,7 @@ public class MainController {
 
        
 
-    @PostMapping(value = "/comments")
+    @PostMapping(value = "/result")
     public String addNewComment(Comments comments, Model model) {
 
         commentsRepository.save(comments);
@@ -72,7 +71,7 @@ public class MainController {
         model.addAttribute("author", comments.getAuthor());
         model.addAttribute("entry", comments.getEntry());
 
-        return "comments";
+        return "result";
     }
 
 }
