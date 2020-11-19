@@ -10,12 +10,15 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/ooo3uph.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mkc0kkr.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
 <body>
 
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        
         <a th:href="@{/index}"><button class="btn btn-outline-warning my-2 my-sm-0"><img id="homebutton"
                     src="images/mrlogo.svg"></button></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -49,6 +52,15 @@
     <div class="information">
         <h2>Developer & Designer</h2>
     </div>
+
+    
+    <div class="row">
+        <div class="col-md-3 checkerboard2"></div>
+        <div class="col-md-3 checkerboard"></div>
+        <div class="col-md-3 checkerboard2"></div>
+        <div class="col-md-3 checkerboard"></div>
+    </div>
+    
     
 
     <!-- <div class="container">
@@ -68,7 +80,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                
+                <p>Hey! Currently I am a student at Tech Talent South enrolled in the Java Code Immersion Program. I am
+                    really excited about learning all of the new material in software development. Also, I have a
+                    Bachelor of Fine Arts in Graphic Design. I really enjoy the aspects of design and development that
+                    overlap. I think it's very important that users are able to interact with a well designed and
+                    functioning program. </p>
             </div>
             <div class="col-md-6">
                 <p>Hey! Currently I am a student at Tech Talent South enrolled in the Java Code Immersion Program. I am
@@ -77,6 +93,7 @@
                     overlap. I think it's very important that users are able to interact with a well designed and
                     functioning program. </p>
             </div>
+            
 
         </div>
     </div>
@@ -88,15 +105,21 @@
 
     <footer class="container-fluid footer">
         <div class="row">
-            <div class="col-md-4">© MR Design </div>
-            <div class="col-md-4">
-                <p class="text-center"><a href="https://issuu.com/matthewrorvick/docs/digital_portfolio_2020"
-                        target="_blank">Online Portfolio Publication</a></p>
+            
+            <div class="col-md-4 footertext">
+                © MR Design
             </div>
             <div class="col-md-4">
-                <p class="text-right"><a href="https://www.linkedin.com/in/matthew-rorvick-a15149134/"
-                        target="_blank">Follow Me</a></p>
+                <div class="icons">
+                    <a href="https://github.com/mattrorvick" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/matthew-rorvick-a15149134/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+            <div class="col-md-4 footertext">
+                <a href="https://issuu.com/matthewrorvick/docs/digital_portfolio_2020"
+                    target="_blank" style="text-decoration: none; color: white;" class="text-center">Issuu Portfolio Publication</a>
+            </div>
+
         </div>
     </footer>
 
