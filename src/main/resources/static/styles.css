@@ -18,15 +18,15 @@ body, html {
 }
 
 #homebutton {
-    width: 20px;
+    width: 35px;
 }
 
-#homebutton2 {
-    width: 40%;
+#homebutton:hover {
+    opacity: 0.1;
 }
-#homebutton2:hover {
-    background-image: url("images/mrlogogold.svg");
-    z-index: 1;
+
+.navbar {
+    border-bottom: 2px #ffc107 solid;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -52,7 +52,20 @@ body, html {
 
 }
 
+.allpoststitle {
+    font-family: "Gotham Bold", serif;
+    font-size: 25px;
+    
+}
 
+.allpostsauthor {
+    font-family: "learning-curve";
+    font-size: 30px;
+}
+
+.allpostsentry {
+    font-family: "Gotham", sans-serif;
+}
 /* .profiletext {
     
     font-family: 'forma-djr-micro', sans-serif;
@@ -69,6 +82,13 @@ body, html {
     background-color: #ffc107;
     width: 100%;
     height: 200px;
+    margin: 50px 0px 50px 0px;
+}
+
+.information2 {
+    background-color: #ffc107;
+    width: 100%;
+    height: 10px;
     margin: 50px 0px 50px 0px;
 }
 
@@ -104,6 +124,18 @@ h6 {
     font-family: 'Gotham', sans-serif; 
     margin-left: 50px;
     
+}
+
+.checkerboard {
+    width: 100%;
+    height: 100%;
+    background-color: #c5c5c5;
+}
+
+.checkerboard2 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
 
 #headshot {
@@ -163,6 +195,27 @@ h6 {
 }
 
 .footer {
-        margin: 40px 0px 0px 0px;
-        
+        margin-top: 40px;
+        background-color: #343a41;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        border-top: 2px #ffc107 solid;
+              
 }
+
+.footertext {
+    color: white;
+    padding-top: 40px;
+    
+}
+.icons {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.fab {
+    color: white;
+    margin: 5px;
+}
+
