@@ -50,6 +50,8 @@ public class MainController {
 
     @GetMapping(value = "/comments")
     public String commentsPage(Comments comments, Model model) {
+        // keeps posts from duplicating every time comments page is refreshed
+        posts.removeAll(posts);
 
         for (Comments postFromDB : commentsRepository.findAll()) {
             posts.add(postFromDB);
